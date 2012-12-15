@@ -1,0 +1,14 @@
+{
+  "name": "crosstalk-test-callback-presence",
+  "version": "1.0.0",
+  "description": "Crosstalk test for callback presence",
+  "main": "index.js",
+  "author": "Crosstalk Systems Inc. <developers@crxtalk.com>",
+  "maintainers": [
+    "Tristan Slominski <tristan.slominski@gmail.com>"
+  ],
+  "crosstalk": {
+    "type": "worker"
+  },
+  "private": true
+}
