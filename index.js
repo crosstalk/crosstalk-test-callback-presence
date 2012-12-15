@@ -9,8 +9,8 @@ var state = { status : "initializing" };
 
 crosstalk.on( "test.callback.should.be.defined", function ( params, callback ) {
   
-  if ( ! state[ 'should.be.defined.test' ] ) {
-    state[ 'should.be.defined.test' ] = callback ? 'pass' : 'fail';
+  if ( ! state[ 'callback.should.be.defined' ] ) {
+    state[ 'callback.should.be.defined' ] = callback ? 'pass' : 'fail';
   }
 
   if ( callback ) return callback();
@@ -19,8 +19,8 @@ crosstalk.on( "test.callback.should.be.defined", function ( params, callback ) {
 
 crosstalk.on( "test.callback.should.be.undefined", function ( params, callback ) {
   
-  if ( ! state[ 'should.be.undefined.test' ] ) {
-    state[ 'should.be.undefined.test' ] = callback ? 'fail' : 'pass';
+  if ( ! state[ 'callback.should.be.undefined' ] ) {
+    state[ 'callback.should.be.undefined' ] = callback ? 'fail' : 'pass';
   }
 
   if ( callback ) return callback(); // don't break test runner if test fails
